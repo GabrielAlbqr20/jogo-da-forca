@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="game-info">
+        <h1>Jogo da Forcas</h1>
+        <div class="estado-jogo">
+          <p id="tentativas-restantes">Tentativas restantes: 6</p>
+          <p id="letras-tentadas">Letras tentadas:</p>
+        </div>
+        <div class="palavra-container">
+          <p id="palavra">_ _ _ _ _</p>
+        </div>
+        <div class="input-container">
+          <head>
+            <title>Jogo da Forca</title>
+            <link rel="stylesheet" href="forcaHtml.css" />
+          </head>
+          <input
+            type="text"
+            id="input-letra"
+            maxlength="1"
+            autofocus
+            placeholder="Digite uma letra"
+            oninput="this.value = this.value.toUpperCase()"
+          />
+          <button onclick="jogar()">Tentar</button>
+        </div>
+        <p id="mensagem"></p>
+      </div>
+      <div class="imagem-forca">
+        <img id="forca-img" src="forca-6.png" alt/>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
